@@ -17,6 +17,7 @@ Dialog::Dialog(QWidget *parent)
     QPen blackPen(Qt::black);
     blackPen.setWidth(3);
 
+
     ellipse = scene->addEllipse(10,10,300,100,blackPen,redBrush);
     rectangle = scene->addRect(-100,-100,50,50);
     rectangle->setFlag(QGraphicsItem::ItemIsMovable);
