@@ -31,3 +31,17 @@ Dialog::~Dialog()
     delete ui;
 }
 
+
+void Dialog::on_pushButton_clicked()
+{
+    ui->graphicsView->rotate(-2);
+
+}
+
+
+void Dialog::on_pushButton_2_clicked()
+{
+    ui->graphicsView->rotate(+2);
+
+}
+
