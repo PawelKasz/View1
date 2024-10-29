@@ -20,10 +20,15 @@ public:
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Dialog *ui;
     QGraphicsScene *scene;
-    QGraphicsEllipseItem *ellipse;
+    QGraphicsEllipseItem *ellipse, *ellipse1;
     QGraphicsRectItem *rectangle;
 };
 #endif // DIALOG_H
